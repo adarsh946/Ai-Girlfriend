@@ -1,6 +1,10 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="flex justify-center flex-col text-black items-center h-screen  ">
       <h1 className=" text-6xl font-bold pb-5">
@@ -18,6 +22,9 @@ export default function Home() {
       </p>
       <div className="pt-3">
         <Button
+          onClick={() => {
+            router.push("/conversation");
+          }}
           variant={"default"}
           className="bg-green-700 text-white hover:bg-green-600  cursor-pointer w-2xs text-lg font-light"
         >

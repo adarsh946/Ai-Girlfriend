@@ -33,7 +33,7 @@ body {
   --foreground: #171717;
 }
 
-@layer utilities {
+/* @layer utilities {
   @keyframes pingSoft {
     0% {
       transform: scale(1);
@@ -48,4 +48,4 @@ body {
   .animate-ping-soft {
     animation: pingSoft 2s ease-out infinite;
   }
-}
+} */
